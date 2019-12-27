@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset "utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML5 Layout</title>
+	<link rel="stylesheet" type="text/css" href="CSS/CSS-P.css">
+	<link rel="stylesheet" type="text/css" href="CSS/responsive.css">
+	<script src="JS/slideshow.js"> </script>
+	
+	<style>
+		body {
+			background:url(Image/depositphotos_190455540-stock-video-dust-particles-natural-floating-organic.jpg);
+			}
+		#top {
+			background:url(Image/to-top-idle.png);
+			margin-left:80%;
+			margin-top: 15%;
+			display:none;
+			position:fixed;
+			float:right;
+			width:12%;
+			height:20%;
+			border:0;
+			outline:none;
+			cursor:pointer;
+			}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<header>
+		<div id="images" style="background-image:url(images/Mystic-Messenger-walkthrogh-emails.jpg)">
+			<img id="slideimages" src="images/1.jpg" width="100%" height="400"/>
+			<div id="previous"><img src="Image/back.png" width="28" height="44" onClick="back()"/></div>
+			<div id="next"><img src="Image/next.png" width="28" height="44" onClick="next()"/></div>
+		</div>
+	</header>
+	
+	
+	<div class="nav">
+		<a href="Home.html"><img src="Image/Wiki-wordmark.png" height="100%" width="90%"></a>
+		<a href="Publisher.html">PUBLISHER</a>
+		<div class="dropdown">
+			<a href="Characters.html" class="dropbtn">CHARACTERS</a>
+			<div class="dropdown-content">
+				<a href="MC.html">MC</a>
+				<a href="Zen.html">Zen</a>
+				<a href="Yoosung.html">Yoosung</a>
+				<a href="Jaehee.html">Jaehee</a>
+				<a href="Jumin.html">Jumin</a>
+				<a href="707.html">707</a>
+				<a href="V.html">V</a>
+				<a href="Unknown.html">Unknown/Ray</a>			
+			</div>
+		</div>
+		<a href="Download.html">DOWNLOADS</a>
+		<a href="Contact.html">CONTACT</a>
+	</div>
+	
+	<article>
+	<div class="introduce">	
+	<h3>Introduce</h3>
+	<img src="Image/cheritz_logo.png" alt="cheritz logo" align="right" height="50%" width="30%"/>
+		<p align="left"> Cheritz was founded on February 2012 in South Korea with the goal of designing and providing Asian style female-oriented games for their consumers. With the reasoning that many more females having an increasing in their economic status as compared with past history, there would be a higher demand for social content that they would be able to indulge in. With that in mind, Cheritz has set themselves a goal to develop female-oriented games that would satisfy this demand. As well as this, they hope to provide products that can be enjoyed by female gamers all over the world (not just Asian females as most would assume would be the only consumers of Asian style games) and also hope the gameplay will be a moving experience. </p>
+		
+	<h3>Purpose</h3>
+	<p>Cheritz develops games that can be enjoyed by anyone (especially females) who are looking for creative Asian style games. They research data on many different female-oriented games and are willing to listen to the voices of female gamers. In simpler terms, they strive to develop enriching and entertaining female-oriented games that can satisfy the demands of their target audience.<br />Cheritz pursues a work environment that is respectful towards everyone; striving to listen to each other in a horizontal position regardless of age, education, experience, and nationality..</p>
+	
+	<h3>Distribution</h3>
+	<p>The demand for female-oriented games is not just limited to South Korea. Cheritz distributes products to Asian countries including Japan, and China and tries to expand to Western countries. The distributions are made online, and often provide translations in certain languages other than Korean in order to achieve this.</p>
+	
+	<h3>Games</h3>
+	<p>Thus far, Cheritz has released four games:</p>
+	<h2 style="color:#FFCC66">Dandelion</h2>
+	<p>Dandelion is an Asian-style game that is categorised as a visual novel and dating simulation game. A 21-year-old girl who pushes herself to be perfect at everything, Hee-Jung, realises that she does not know what she really desires in her life. Although she lives a hectic life, she feels like she is on the road to nowhere. However, one day she encounters mysterious animals and decides to take them in. She doesn't yet realise that this would radically change her life...</p>
+	<div align="center"><img src="Image/dandelion.jpg" style="width:70%" style="height:70%"/></div>
+	<h2 style="color:#FFCC66">Nameless~ The only thing you must recall ~</h2>
+	<p>Eri, the main protagonist, is an ordinary-looking freshman who attends Crobi Academy. With her parents working as researchers at overseas, she is left all alone at her grandparents' house after her grandfather's death. Being left by herself, "Eri" continues to obsess over her ball-jointed dolls without being able to tell anyone, even her friends, about her hobby.</p>
+	<div align="center"><img src="Image/nameless.jpg" style="width:70%" style="height:70%"/></div>
+	<h2 style="color:#FFCC66">Mystic Messenger</h2>
+	<p>You were looking for a game app just to kill some time and stumbled upon an app called "Mystic Messenger". It sounded interesting, so you downloaded it and soon found yourself chatting with someone nicknamed "Unknown". They persuaded you to go to some studio apartment, and as soon as you unlocked the door and walked into to the apartment, your app is suddenly connected to a mystic group chat with attractive guys!? After a long chat, they ask you to join their secret party planning association called the R.F.A...</p>
+	<div align="center"><img src="Image/mm.png" style="width:70%" style="height:70%"/></div>
+	<h2 style="color:#FFCC66">The Ssum</h2>
+	<p>Spark a special relationship with somebody who will never leave you. Enjoy new messages and phone calls with him every day. Your special day will start with The SSUM! Enjoy new chats and phone calls every day. Your special Ssum-one will send you new pictures every day. Your special Ssum-one will wait for you to wake up and go to bed! Share your daily life with him. See how your relationship grows as time passes!</p>
+	<div align="center"><img src="Image/thessum.png" style="width:70%" style="height:70%"/></div>
+	</div>				
+	</article>
+	
+	<aside>
+	<div>
+	<h1> Walkthroughs </h1>
+	<table>
+			<tr>
+				<td class="td1" align="center"><img src="Image/Zen_Sticker_04.png" width="70%" height="100"/></td>
+				<td class="td2"><a href="https://otomeobsessed.com/walkthrough-mystic-messenger-zen-route-sixth-day-chats/" target="frame_content">[Walkthrough] Mystic Messenger - Zen Route</a></td>
+			</tr>
+			<tr>
+				<td class="td1" align="center"><img src="Image/Yoosung_Sticker_05.png" width="70%" height="100" /></td>
+				<td class="td2"><a href="https://otomeobsessed.com/walkthrough-mystic-messenger-yoosung-route-fifth-day-chats/" target="frame_content">[Walkthrough] Mystic Messenger - Yoosung Route</a></td>
+			</tr>
+			<tr>
+				<td class="td1" align="center"><img src="Image/Jaehee_Sticker_01.png" width="70%" height="100"/></td>
+				<td class="td2"><a href="https://otomeobsessed.com/walkthrough-mystic-messenger-jaehee-route-fifth-day-chats/" target="frame_content">[Walkthrough] Mystic Messenger - Jaehee Route</a></td>
+			</tr>
+			<tr>
+				<td class="td1" align="center"><img src="Image/Jumin_Sticker_03.png" width="70%" height="100"/></td>
+				<td class="td2"><a href="https://otomeobsessed.com/walkthrough-mystic-messenger-jumin-route-fifth-day-chats/" target="frame_content">[Walkthrough] Mystic Messenger - Jumin Route</a></td>
+			</tr>
+			<tr>
+				<td class="td1" align="center"><img src="Image/707_Sticker_02.png" width="70%" height="100"/></td>
+				<td class="td2"><a href="https://otomeobsessed.com/walkthrough-mystic-messenger-707-route-fifth-day-chats/" target="frame_content">[Walkthrough] Mystic Messenger - 707 Route</a></td>
+			</tr>
+			<tr>
+				<td class="td1" align="center"><img src="Image/tumblr_owgmn4DlcQ1som7pbo3_500.gif" width="70%" height="100"/></td>
+				<td class="td2"><a href="https://otomeobsessed.com/walkthrough-mystic-messenger-v-route-another-story-fifth-day-chats/" target="frame_content">[Walkthrough] Mystic Messenger - V Route</a></td>
+			</tr>
+			<tr>
+				<td class="td1" align="center"><img src="Image/tumblr_ow7o8mZ9H61som7pbo5_500.gif" width="70%" height="100"/></td>
+				<td class="td2"><a href="https://otomeobsessed.com/walkthrough-mystic-messenger-ray-route-fifth-day-chats/" target="frame_content">[Walkthrough] Mystic Messenger - Unknown Route</a></td>
+			</tr>
+			<tr>
+				<td class="td1" align="center"><img src="Image/unnamed.jpg" width="70%" height="100"/></td>
+				<td class="td2"><a href="https://otomeobsessed.com/mystic-messenger-email-guide/" target="frame_content">[Walkthrough] Mystic Messenger - Email Guide</a></td>
+			</tr>
+		</table>
+	</div>
+	</aside>
+	
+	<div id="scream" style="float:right">
+			<div style="width:30%">
+		<iframe src="Music/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+        <audio controls="controls" autoplay="autoplay">
+            <source src="D:\HK2\PRO201\Project\Music\Mystic Messenger - Han.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+	</div>
+	<button onClick="gototop()" id="top" title="Back to Top"></button>
+	
+	<footer>
+	<br><h1> Contact Us </h1>
+		<div class="contact_left" align="center">
+			<a href="https://www.facebook.com/CheritzMysticMessenger/" target="frame_content"><img src="Image/icons8-facebook-512.png" style="margin:2%" width="60"></a>
+			<a href="https://twitter.com/Cheritz_DL" target="frame_content"><img src="Image/icons8-twitter-512.png" style="margin:2%" width="60"></a>
+			<a href="https://www.instagram.com/cheritz_dl/" target="frame_content"><img src="Image/icons8-instagram-old-512.png" style="margin:2%" width="60"></a>
+		</div>
+	
+		<div class="contact_right" style="margin:2%">
+			<a href="https://otomeobsessed.com/mystic-messenger-faq/" target="frame_content"><b>FAQ</b></a>
+		</div>
+	</footer>
+	</div>
+</body>
+</html>

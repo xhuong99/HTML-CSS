@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset "utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML5 Layout</title>
+	<link rel="stylesheet" type="text/css" href="CSS/CSS-C.css">
+	<link rel="stylesheet" type="text/css" href="CSS/responsive.css">
+	<script src="JS/slideshow.js"> </script>
+	
+	<style>
+		body {
+			background:url(Image/depositphotos_190455540-stock-video-dust-particles-natural-floating-organic.jpg);
+			}
+		#top {
+			background:url(Image/to-top-idle.png);
+			margin-left:80%;
+			margin-top: 15%;
+			display:none;
+			position:fixed;
+			float:right;
+			width:12%;
+			height:20%;
+			border:0;
+			outline:none;
+			cursor:pointer;
+			}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<header>
+		<div id="images" style="background-image:url(images/Mystic-Messenger-walkthrogh-emails.jpg)">
+			<img id="slideimages" src="images/1.jpg" width="100%" height="400"/>
+			<div id="previous"><img src="Image/back.png" width="28" height="44" onClick="back()"/></div>
+			<div id="next"><img src="Image/next.png" width="28" height="44" onClick="next()"/></div>
+		</div>
+	</header>
+	
+	<div class="nav">
+		<a href="Home.html"><img src="Image/Wiki-wordmark.png" height="100%" width="90%"></a>
+		<a href="Publisher.html">PUBLISHER</a>
+		<div class="dropdown">
+			<a href="Characters.html" class="dropbtn">CHARACTERS</a>
+			<div class="dropdown-content">
+				<a href="MC.html">MC</a>
+				<a href="Zen.html">Zen</a>
+				<a href="Yoosung.html">Yoosung</a>
+				<a href="Jaehee.html">Jaehee</a>
+				<a href="Jumin.html">Jumin</a>
+				<a href="707.html">707</a>
+				<a href="V.html">V</a>
+				<a href="Unknown.html">Unknown/Ray</a>			
+			</div>
+		</div>
+		<a href="Download.html">DOWNLOADS</a>
+		<a href="Contact.html">CONTACT</a>
+	</div>
+	
+	<article>
+	<h1>WRITE US</h1>
+			<div class="contact">
+  				<form name="myForm" onSubmit="return validate()" method="post">
+
+    				<label for="fname">Your Name:</label>
+    				<input type="text" id="fname" name="firstname" placeholder="Please enter your name here...">
+
+
+    				<label for="subject">Your Comment:</label>
+    				<textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+
+    				<input type="submit" value="Submit">
+  				</form>
+			</div>
+	</article>
+	
+	<aside>
+	<div>
+	<h1> Walkthroughs </h1>
+	<table>
+			<tr>
+				<td class="td1" align="center"><img src="Image/Zen_Sticker_04.png" width="70%" height="100"/></td>
+				<td class="td2"><a href="https://otomeobsessed.com/walkthrough-mystic-messenger-zen-route-sixth-day-chats/" target="frame_content">[Walkthrough] Mystic Messenger - Zen Route</a></td>
+			</tr>
+			<tr>
+				<td class="td1" align="center"><img src="Image/Yoosung_Sticker_05.png" width="70%" height="100" /></td>
+				<td class="td2"><a href="https://otomeobsessed.com/walkthrough-mystic-messenger-yoosung-route-fifth-day-chats/" target="frame_content">[Walkthrough] Mystic Messenger - Yoosung Route</a></td>
+			</tr>
+			<tr>
+				<td class="td1" align="center"><img src="Image/Jaehee_Sticker_01.png" width="70%" height="100"/></td>
+				<td class="td2"><a href="https://otomeobsessed.com/walkthrough-mystic-messenger-jaehee-route-fifth-day-chats/" target="frame_content">[Walkthrough] Mystic Messenger - Jaehee Route</a></td>
+			</tr>
+			<tr>
+				<td class="td1" align="center"><img src="Image/Jumin_Sticker_03.png" width="70%" height="100"/></td>
+				<td class="td2"><a href="https://otomeobsessed.com/walkthrough-mystic-messenger-jumin-route-fifth-day-chats/" target="frame_content">[Walkthrough] Mystic Messenger - Jumin Route</a></td>
+			</tr>
+			<tr>
+				<td class="td1" align="center"><img src="Image/707_Sticker_02.png" width="70%" height="100"/></td>
+				<td class="td2"><a href="https://otomeobsessed.com/walkthrough-mystic-messenger-707-route-fifth-day-chats/" target="frame_content">[Walkthrough] Mystic Messenger - 707 Route</a></td>
+			</tr>
+			<tr>
+				<td class="td1" align="center"><img src="Image/tumblr_owgmn4DlcQ1som7pbo3_500.gif" width="70%" height="100"/></td>
+				<td class="td2"><a href="https://otomeobsessed.com/walkthrough-mystic-messenger-v-route-another-story-fifth-day-chats/" target="frame_content">[Walkthrough] Mystic Messenger - V Route</a></td>
+			</tr>
+			<tr>
+				<td class="td1" align="center"><img src="Image/tumblr_ow7o8mZ9H61som7pbo5_500.gif" width="70%" height="100"/></td>
+				<td class="td2"><a href="https://otomeobsessed.com/walkthrough-mystic-messenger-ray-route-fifth-day-chats/" target="frame_content">[Walkthrough] Mystic Messenger - Unknown Route</a></td>
+			</tr>
+			<tr>
+				<td class="td1" align="center"><img src="Image/unnamed.jpg" width="70%" height="100"/></td>
+				<td class="td2"><a href="https://otomeobsessed.com/mystic-messenger-email-guide/" target="frame_content">[Walkthrough] Mystic Messenger - Email Guide</a></td>
+			</tr>
+		</table>
+	</div>
+	</aside>
+	
+	<div id="scream" style="float:right">
+			<div style="width:30%">
+		<iframe src="Music/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+        <audio controls="controls" autoplay="autoplay">
+            <source src="D:\HK2\PRO201\Project\Music\Light And Daffodils - Lee Hosan, Lee Hyunjin.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+	</div>
+	<button onClick="gototop()" id="top" title="Back to Top"></button>
+	
+	<footer>
+	<br><h1> Contact Us </h1>
+		<div class="contact_left" align="center">
+			<a href="https://www.facebook.com/CheritzMysticMessenger/" target="frame_content"><img src="Image/icons8-facebook-512.png" style="margin:2%" width="60"></a>
+			<a href="https://twitter.com/Cheritz_DL" target="frame_content"><img src="Image/icons8-twitter-512.png" style="margin:2%" width="60"></a>
+			<a href="https://www.instagram.com/cheritz_dl/" target="frame_content"><img src="Image/icons8-instagram-old-512.png" style="margin:2%" width="60"></a>
+		</div>
+	
+		<div class="contact_right" style="margin:2%">
+			<a href="https://otomeobsessed.com/mystic-messenger-faq/" target="frame_content"><b>FAQ</b></a>
+		</div>
+	</footer>
+	</div>
+</body>
+</html>
+6
